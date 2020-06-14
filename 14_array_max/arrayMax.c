@@ -19,6 +19,7 @@ int * arrayMax(int * array, int n) {
 
 	max=array[i];
 	p=p+(i-j);
+	j=i;
 	
       }
 
