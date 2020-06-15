@@ -5,7 +5,7 @@
 void reverse(char * str) {
   //WRITE ME!
 
-  if (*str==0) {return;}
+  if (*str=='\0') {return;}
   
   size_t len=strlen(str);
   char fc;
