@@ -4,6 +4,28 @@
 
 void reverse(char * str) {
   //WRITE ME!
+  size_t len=strlen(str);
+  char fc;
+  char lc;
+  
+  if (len==0) {return;}
+
+  else  {
+    
+    
+    for (int i=0;i<(len/2);i++) {
+      
+      fc=str[i];
+      lc = str[len-1-i];
+
+      str[i]=lc;
+      str[len-1-i]=fc;
+      
+    }
+
+  }
+  
+  
 }
 
 int main(void) {
