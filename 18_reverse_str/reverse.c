@@ -46,6 +46,7 @@ int main(void) {
   }
 
   reverse(NULL);
+  reverse(0);
     
   return EXIT_SUCCESS;
 }
