@@ -5,8 +5,10 @@
 void reverse(char * str) {
   //WRITE ME!
 
-  if (*str=='\0') {return;}
-  
+  char ** test=&str;
+
+  if(*test==NULL) {return;}
+
   size_t len=strlen(str);
   char fc;
   char lc;
@@ -33,7 +35,7 @@ void reverse(char * str) {
 
 int main(void) {
   
-  char str0[] = "";
+  char str0[]="a" ;
   char str1[] = "123";
   char str2[] = "abcd";
   
@@ -42,5 +44,9 @@ int main(void) {
     reverse(array[i]);
     printf("%s\n", array[i]);
   }
+
+  reverse(NULL);
+    
   return EXIT_SUCCESS;
 }
+
