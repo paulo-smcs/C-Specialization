@@ -8,6 +8,8 @@ size_t maxSeq(int * array, size_t n){
   int ans=1;
   int count=1;
 
+  if(n==1){return 0;}
+  
   for (int j=1;j<n;j++) {
 
     for (int i=j;i<n;i++){
