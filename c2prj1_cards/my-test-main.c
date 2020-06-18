@@ -16,7 +16,7 @@ int main(void) {
   print_card(c);
   card_t d;
   
-  d=card_from_letters('0','d');
+  d=card_from_letters('K','h');
   print_card(d);
 
   int num=51;

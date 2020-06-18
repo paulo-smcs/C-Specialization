@@ -6,3 +6,7 @@ test-deck: deck.o test-deck.o deck-c4.o cards.o
 	gcc -o test-deck -ggdb3 deck.o test-deck.o deck-c4.o cards.o
 clean:
 	rm test poker cards.o my-test-main.o *~
+
+
+my-test: deck.o cards.o my-test.c
+	gcc -o my-test deck.o cards.o my-test.c
