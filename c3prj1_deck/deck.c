@@ -33,7 +33,7 @@ void shuffle(deck_t * d){
 
   int i=0;
   
-  while (i<1000) {
+  while (i<50) {
 
     card_t * s1;
     card_t * s2;
@@ -48,6 +48,16 @@ void shuffle(deck_t * d){
 
     (*d).cards[j]=s2;
     (*d).cards[w]=s1;
+
+    int x=random() % N_MAX;
+    int z=random() % N_MAX;
+
+    
+    s1=(*d).cards[x];
+    s2=(*d).cards[z];
+
+    (*d).cards[x]=s2;
+    (*d).cards[z]=s1;
 
     i++;
   }
