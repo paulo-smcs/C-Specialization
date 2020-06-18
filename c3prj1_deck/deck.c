@@ -33,7 +33,7 @@ void shuffle(deck_t * d){
 
   int i=0;
   
-  while (i<50) {
+  while (i<10) {
 
     card_t * s1;
     card_t * s2;
