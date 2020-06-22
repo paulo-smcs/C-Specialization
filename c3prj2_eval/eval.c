@@ -35,7 +35,7 @@ suit_t flush_suit(deck_t * hand) {
       
     }
 
-    if(count==5){return i;}
+    if(count>=5){return i;}
     
   }
   
