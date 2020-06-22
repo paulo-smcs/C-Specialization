@@ -71,7 +71,7 @@ ssize_t  find_secondary_pair(deck_t * hand,
   size_t n=(*hand).n_cards;
   card_t c_idx=*((*hand).cards[match_idx]);
 
-  for (int i=match_idx;i<n;i++) {
+  for (int i=0;i<n;i++) {
     
     card_t c_i=*((*hand).cards[i]);
     
