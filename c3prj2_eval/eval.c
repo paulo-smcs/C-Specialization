@@ -180,7 +180,7 @@ int is_straight_at(deck_t * hand, size_t index, suit_t fs) {
     
     card_t c_i=*cards[i];
 
-    if((c_idx.value!=c_i.value) && suit_array[i]!=fs ) {return 0;} 
+    //if((c_idx.value!=c_i.value) && suit_array[i]!=fs ) {return 0;} 
     if((c_idx.value-c_i.value)==1 && suit_array[i]==fs ) {c_idx=c_i; count++;}
     
     
